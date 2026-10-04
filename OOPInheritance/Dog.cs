@@ -1,9 +1,16 @@
 ﻿namespace OOPInheritance;
 
-public class Dog(string name, int age, double height, double weight, bool isAlive, bool canFetch)
-    : Animal(name, age, height, weight, isAlive)
+public class Dog : Animal
 {
-    public bool CanFetch { get; set; } = canFetch;
+    public bool CanFetch { get; set; } = true;
+
+    public Dog() { }
+
+    public Dog(string name, int age, double height, double weight, bool isAlive, bool canFetch)
+        : base(name, age, height, weight, isAlive)
+    {
+        CanFetch = canFetch;
+    }
 
     public override void MakeSound()
     {
