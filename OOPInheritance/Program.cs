@@ -1,4 +1,4 @@
-﻿using OOPInheritance;
+﻿using OOPInheritance.Models;
 
 var animals = new List<Animal>()
 {

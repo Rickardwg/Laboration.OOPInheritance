@@ -1,4 +1,4 @@
-﻿namespace OOPInheritance;
+﻿namespace OOPInheritance.Models;
 
 public class Transylvanian : Cat
 {
