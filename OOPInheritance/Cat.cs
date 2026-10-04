@@ -1,9 +1,16 @@
 ﻿namespace OOPInheritance;
 
-public class Cat(string name, int age, double height, double weight, bool isAlive, int lives) 
-    : Animal(name, age, height, weight, isAlive)
+public class Cat : Animal
 {
-    public int Lives { get; set; } = lives;
+    public int Lives { get; set; } = 9;
+
+    public Cat() { }
+
+    public Cat(string name, int age, double height, double weight, bool isAlive, int lives)
+        : base(name, age, height, weight, isAlive)
+    {
+        Lives = lives;
+    }
 
     public override void MakeSound()
     {
