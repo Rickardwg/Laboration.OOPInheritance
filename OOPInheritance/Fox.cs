@@ -1,9 +1,16 @@
 ﻿namespace OOPInheritance;
 
-public class Fox(string name, int age, double height, double weight, bool isAlive, bool isTame)
-    : Animal(name, age, height, weight, isAlive)
+public class Fox : Animal
 {
-    public bool IsTame { get; set; } = isTame;
+    public bool IsTame { get; set; } = false;
+
+    public Fox() { }
+
+    public Fox(string name, int age, double height, double weight, bool isAlive, bool isTame)
+        : base(name, age, height, weight, isAlive)
+    {
+        IsTame = isTame;
+    }
 
     public override void MakeSound()
     {
